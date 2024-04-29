@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESERVATION REQUEST </title>
+    <style>
+      form, fieldset {
+        border: 1px solid; 
+        padding: 10px;  
+    border: 1px solid#ddd;
+      }
+    </style>
+</head>
+<body>
+    <center><h1>RESERVATION REQUEST </h1></center>
+    <form>
+                <fieldset>
+                    <legend style="color:blue">Genral Information</legend>
+                    
+                        Arrival Date:
+                        <input type="text" name="text" size=""><span style=color:red>Arrival Date is Invalid</span><br><br>
+                
+                        Night:
+                        <input type="text" name="text" size=""><span style=color:red>Night must be a Number</span><br><br>
+                    
+                    Adults:
+                    
+                      <select name="Adults">
+                        <option name="">----SELECT---</option>
+                        <option name="">1</option>
+                        <option name="">2</option>
+                        <option name="">3</option>
+                        <option name="">4</option>
+                    
+                      </select><br><br>
+                      Children:
+                    
+                      <select name="Children">
+                        <option name="">----SELECT---</option>
+                        <option name="">0</option>
+                        <option name="">1</option>
+                        <option name="">2</option>
+                        <option name="">3</option>
+                      </select>
+                    </fieldset>  
+         <fieldset>
+            <legend style="color:blue">Preferences</legend>
+            Room Type:
+            <input type="radio" name="Standard" size="">Standard
+            <input type="radio" name="Business" size="">Business
+            <input type="radio" name="Suite" size="">Suite<br> 
+            Bed Type:
+            <input type="radio" name="King" size="">King
+            <input type="radio" name="Double Double" size="">Double Double<br>
+            <input type="checkbox" name="Smoking" size="">Smoking
+         </fieldset>  
+         <fieldset>
+            <legend style="color:blue ">Contact Information</legend>
+            Name:
+            <input type="text" name="fname" size=""><span style=color:red>Name is Required</span><br><br>
+            Email:
+            <input type="email" name="date" size=""><span style=color:red>Email Address is Invalid</span><br><br>
+            Phone:
+            <input type="text" name="text" size=""><span style=color:red>Phone Number is Invalid
+         </fieldset><br><br><br>
+         <input type="submit" value="Submit Reservation">
+         <input type="reset" value="clear">
+
+    </form>
+</body>
+</html>
